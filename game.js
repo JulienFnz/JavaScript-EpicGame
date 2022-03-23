@@ -8,18 +8,17 @@ var txt = document.querySelector('p');
 
 btn.addEventListener('click', updateBtn);
 
-
-
 function updateBtn() {
   if (btn.value === 'Lancez le jeu') {
     btn.value = 'Stop!!!';
     //txt.textContent = "Tu t'es fait Rickroller!";
-    txt.innerHTML = "Tu t'es fait Rickroller!" + "<br>" + "<img src=\"loading.gif\"/>";
+    txt.innerHTML = "Tu t'es fait" +   " <a href=\"https://fr.wiktionary.org/wiki/rickroller\">rickroller</a>!" + "<br>" + "<img src=\"loading.gif\"/>";
     audio.play();
 
   } else {
     btn.value = 'Lancez le jeu';
-    txt.textContent = 'Le meilleur jeu en JavaScript !';
+    txt.textContent = 'Encore!?';
+    audio.pause();
   }
 }
 
